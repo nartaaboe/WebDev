@@ -1,0 +1,11 @@
+.emperor {
+    font-family: cursive;
+}
+
+table .reign {
+    font-family: monospace;
+    background-color: blue;
+}
+table .emperor{
+    background-color: red;
+}

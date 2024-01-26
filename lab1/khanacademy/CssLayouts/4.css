@@ -1,0 +1,18 @@
+#greeting {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    z-index: 1;
+    background: rgb(255, 255, 0);
+    border: 2px solid black;
+    font-family: "Comic Sans MS", fantasy;
+    padding: 5px;
+    width: 262px;
+}
+
+#creature {
+    transform: scale(0.5);
+    position: absolute;
+    top: 90px;
+    left: 80px;
+}
