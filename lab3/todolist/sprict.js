@@ -1,7 +1,6 @@
 let addToDoButton = document.getElementById('button_add');
 let toDoContainer = document.getElementById('to_place_container');
 let inputField = document.getElementById('input_text');
-
 addToDoButton.addEventListener('click', function (){
     var divElement = document.createElement('div');
     divElement.classList.add('div_element_style');
@@ -40,6 +39,7 @@ addToDoButton.addEventListener('click', function (){
             span.style.textDecoration = '';
             span.style.color = 'black';
         }
+
     });
     deleteButton.addEventListener('click',function (){
         toDoContainer.removeChild(divElement);
