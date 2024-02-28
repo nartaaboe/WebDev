@@ -2,7 +2,7 @@
 <div class="wrapper">
 <div class ='container' *ngFor="let product of products; let a = index">
     <div class="images">
-        <img src="{{product.image.at(product.i)}}">
+        <a href="{{product.reference}}" target="_blank"><img src="{{product.image.at(product.i)}}"></a>
         <button (click)="nextImage(a)"> > </button>
     </div>
     <h3>
@@ -10,6 +10,7 @@
             {{ product.name }}
         </a>
     </h3>
+
     <div class="rating">
         <img src="/assets/images/red-star.jpeg">
         <h4>{{product.rating}}</h4>

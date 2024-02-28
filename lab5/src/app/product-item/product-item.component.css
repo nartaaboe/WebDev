@@ -1,0 +1,21 @@
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+div {
+    margin-bottom: 10px;
+}
+a {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #e0e0e0;
+}

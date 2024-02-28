@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import{ImageService} from "../services/image/image.service";
 import { products } from '../products';
 
@@ -7,11 +7,14 @@ import { products } from '../products';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
+export class ProductListComponent implements OnInit{
+
   products = [...products];
 
-
-
+  ngOnInit(): void {
+    console.log('test');
+    throw new Error('Method not implemented.');
+  }
   share(link:string) {
     const telegramUrl = `https://t.me/share/url?url=${encodeURIComponent(link)}`;
     window.open(telegramUrl, '_blank');
