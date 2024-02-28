@@ -4,7 +4,7 @@
         <div class="product_content" *ngIf="product.category === type">
             <div class="product_img">
                 <a [href]="product.link" target="_blank"><img [src]="product.img.at(product.i)"/></a>
-                <button (click)="nextImage(a)"> > </button>
+                <button *ngIf="(products[a].img.length > products[a].i + 1) || (products[a].i === 2)" (click)="nextImage(a)"> > </button>
             </div>
             <div class="product_info">
                 <div class="actual_info">

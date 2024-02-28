@@ -18,7 +18,6 @@ export class ProductListComponent implements OnInit{
   }
   nextImage(a: number){
     if(products[a].i < 2){
-      if(products[a].img.length > products[a].i + 1)
         products[a].i++;
     }
     else{
