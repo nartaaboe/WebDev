@@ -1,0 +1,17 @@
+<div class="container" *ngIf="loaded; else loading">
+  <h3>Album detail #{{album.id}}</h3>
+  <h4>{{album.title}}</h4>
+  <form>
+    <label for="title">Title:</label>
+    <input type="text" id="title" [(ngModel)]="newTitle" [ngModelOptions]="{standalone: true}"/>
+    <button (click)="changeTitle()">Change Title</button>
+  </form>
+  <div>
+    <button [routerLink]="['photos']">Photos</button>
+    <button [routerLink]="['/albums']">Return back</button>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p>Album is loading...</p>
+</ng-template>

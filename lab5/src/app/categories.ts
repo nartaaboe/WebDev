@@ -1,25 +1,23 @@
-
-
 export interface Category{
-    id: number;
     type: string;
+    img: string;
 }
 
 export const categories = [
     {
-        id: 0,
         type: 'Iphone',
+        img: 'https://resources.cdn-kaspi.kz/img/m/p/he2/h1d/83559338442782.png?format=gallery-medium'
     },
     {
-        id: 1,
-        type: 'MacBook'
+        type: 'MacBook',
+        img: 'https://resources.cdn-kaspi.kz/img/m/p/hbf/h31/64515217850398.jpg?format=gallery-medium'
     },
     {
-        id: 2,
-        type: 'JBLHeadphones'
+        type: 'JBLHeadphones',
+        img: 'https://resources.cdn-kaspi.kz/img/m/p/hef/h29/64030233788446.jpg?format=gallery-medium'
     },
     {
-        id: 3,
-        type: 'Ipad'
+        type: 'Ipad',
+        img: 'https://resources.cdn-kaspi.kz/img/m/p/he4/hdd/64320699203614.jpg?format=gallery-medium'
     }
 ]

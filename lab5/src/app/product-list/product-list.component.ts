@@ -1,7 +1,6 @@
 import {Component, OnInit, signal} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {Product, products} from "../products";
-import {share} from "rxjs";
 
 @Component({
   selector: 'app-product-list',

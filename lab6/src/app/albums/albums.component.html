@@ -1,0 +1,21 @@
+<div class="container">
+  <fieldset>
+    <input type="text" [(ngModel)]="newAlbum.title" placeholder="title">
+    <button (click)="addAlbum()">Add</button>
+  </fieldset>
+
+
+  <div class="albums" *ngIf="loaded; else loading">
+    <div class="album" *ngFor="let album of albums">
+      <img src="https://i0.wp.com/www.michigandaily.com/wp-content/uploads/2018/04/Yeezus-Def-Jam-Recordings-4.jpg?w=720&ssl=1">
+      <a [routerLink]="['/albums', album.id]">{{album.id}} {{album.title}}</a>
+      <button (click)="deleteAlbum(album.id)">X</button>
+    </div>
+  </div>
+
+
+  <button class="returnback" [routerLink]="['/home']">Return back</button>
+</div>
+<ng-template #loading>
+  <p>Albums are loading...</p>
+</ng-template>

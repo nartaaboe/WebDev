@@ -1,0 +1,9 @@
+<div class="container">
+  <h3>Photos</h3>
+  <div class="gallery">
+    <div class="photo" *ngFor="let photo of photos">
+      <img [src]="photo.url">
+    </div>
+  </div>
+  <button [routerLink]="['../']">Return back</button>
+</div>

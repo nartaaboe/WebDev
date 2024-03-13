@@ -1,4 +1,7 @@
 <h2>Products</h2>
-<div *ngFor="let category of categories">
-    <a (click)="goToProductsPage(category.type)">{{category.type}}</a>
+<div class="category-list">
+    <div *ngFor="let category of categories" class="category">
+        <p>{{category.type}}</p>
+        <a (click)="goToProductsPage(category.type)"><img [src]="category.img"/></a>
+    </div>
 </div>

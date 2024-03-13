@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+fieldset{
+  border: none;
+}
+fieldset input{
+  padding-left: 10px;
+  width: 200px;
+  height: 28px;
+  margin: 10px;
+  border: 1px solid #1c1e25;
+  border-radius: 3px;
+}
+fieldset button{
+  margin: 10px;
+  width: 50px;
+  height: 28px;
+  background-color: #596e9d;
+  border: 1px solid #1c1e25;
+  border-radius: 3px;
+}
+fieldset button:hover{
+  background-color: #1a2b4d;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.albums{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.album{
+  overflow: hidden;
+}
+.album img{
+  margin: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.album a{
+  margin-right: 10px;
+}
+.album button{
+  width: 30px;
+  height: 28px;
+  background-color: #596e9d;
+  border: 1px solid #1c1e25;
+  border-radius: 3px;
+}
+.album button:hover{
+  background-color: #1a2b4d;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  background-color: #4f4f4f;
+  border-radius: 2px;
+}
+button{
+  cursor: pointer;
+}
+.returnback{
+  width: 100px;
+  height: 28px;
+  background-color: #596e9d;
+  border: 1px solid #1c1e25;
+  border-radius: 4px;
+}
+.returnback:hover{
+  background-color: #1a2b4d;
+}

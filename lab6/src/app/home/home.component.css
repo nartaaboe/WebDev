@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.batman_logo{
+  text-align: center;
+}
+.batman_logo img{
+  width: 600px;
+  opacity: 20%;
+}
