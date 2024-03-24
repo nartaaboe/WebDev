@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AlbumService} from "../post.service";
+import {AlbumService} from "../album.service";
 import {Photo} from "../models";
 import {ActivatedRoute, RouterLink} from "@angular/router";
 import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";

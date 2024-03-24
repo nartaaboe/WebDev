@@ -2,7 +2,7 @@ import {Component, OnInit, signal} from '@angular/core';
 import {Album} from "../models";
 import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
-import {AlbumService} from "../post.service";
+import {AlbumService} from "../album.service";
 import {FormsModule} from "@angular/forms";
 
 @Component({

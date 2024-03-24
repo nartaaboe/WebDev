@@ -1,4 +1,4 @@
-<div class="container">
+<div *ngIf="loaded; else loading" class="container">
   <h3>Photos</h3>
   <div class="gallery">
     <div class="photo" *ngFor="let photo of photos">
@@ -7,3 +7,7 @@
   </div>
   <button [routerLink]="['../']">Return back</button>
 </div>
+
+<ng-template #loading>
+  <p>Photos are loading...</p>
+</ng-template>

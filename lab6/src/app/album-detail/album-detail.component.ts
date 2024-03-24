@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, RouterLink} from "@angular/router";
 import {Album} from "../models";
-import {AlbumService} from "../post.service";
+import {AlbumService} from "../album.service";
 import {NgIf} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 
@@ -36,6 +36,11 @@ export class AlbumDetailComponent implements OnInit{
     })
   }
   changeTitle(){
-    this.album.title = this.newTitle;
+    if(this.album.title === this.newTitle)
+      alert("Enter different title.")
+    else{
+      this.album.title = this.newTitle;
+    }
+    this.newTitle = '';
   }
 }
